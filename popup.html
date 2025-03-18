@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snipify: Code Snippet Collector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Snipify: Code Snippet Collector</h1>
+  
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="add">Add Snippet</button>
+    <button class="tab-btn" data-tab="list">Saved Snippets</button>
+  </div>
+
+  <div id="add-section" class="tab-content active">
+    <form id="snippet-form">
+      <textarea id="snippet-text" placeholder="Enter your code snippet"></textarea>
+      <input type="text" id="snippet-tags" placeholder="Tags (comma-separated)">
+      <button type="submit">Save Snippet</button>
+    </form>
+  </div>
+
+  <div id="list-section" class="tab-content">
+    <input type="text" id="search-bar" placeholder="Search by tags...">
+    <div class="snippet-count">Total Snippets: <span id="snippet-counter">0</span></div>
+    <div id="snippet-list"></div>
+    
+    <div class="button-group">
+      <button id="export">Export Snippets</button>
+      <button id="import">Import Snippets</button>
+      <input type="file" id="import-file" accept=".json" style="display: none;">
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
