@@ -14,7 +14,7 @@ A Chrome extension that helps developers collect, organize, and manage code snip
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Kunalagarwal26/Snipify-Code-Snippet-Collector.git
+   https://github.com/Kunalagarwal26/Snipify-Code-Snippet-Collector.git
    ```
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top right corner
